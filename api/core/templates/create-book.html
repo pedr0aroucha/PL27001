@@ -1,0 +1,40 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+
+	<h1 class="text-center mt-4">Adicionar Livro</h1>
+
+	<form enctype="multipart/form-data" method="post"> {% csrf_token %}
+		<div class="form-group m-4 p-4">
+
+			{% if messages %}
+				{% for message in messages %}
+					<div class="alert alert-danger">{{ message }}</div>
+				{% endfor %}
+
+            {% endif %}
+
+			<label for="city">Cidade:</label>
+			<input type="text" class="form-control" name="city" required>
+
+			<label for="description">Descrição:</label>
+			<textarea type="text" class="form-control" name="description" required></textarea>
+
+			<label for="phone">Telefone:</label>
+			<input type="text" class="form-control" name="phone" required>
+
+			<label for="email">Email:</label>
+			<input type="email" class="form-control" name="email" required>
+
+			<label>Foto:</label>
+			<input type="file"  class="form-control-file border" name="photo" accept="image/*" required>
+
+			<br>
+
+			<center>
+				<button type="submit" class="btn btn-dark">Adicionar</button>
+			</center>
+		</div>
+	</form>
+
+{% endblock %}

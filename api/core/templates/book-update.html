@@ -1,0 +1,38 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+
+	<form enctype="multipart/form-data" method="post"> {% csrf_token %}
+		<div class="form-group m-4 p-4">
+
+			{% if messages %}
+				{% for message in messages %}
+					<div class="alert alert-danger">{{ message }}</div>
+				{% endfor %}
+
+            {% endif %}
+
+			<label for="city">Cidade:</label>
+			<input type="text" class="form-control" name="city" value="{{ book.city }}" required>
+
+			<label for="description">Descrição:</label>
+			<textarea type="text" class="form-control" name="description" required>{{ book.description }}</textarea>
+
+			<label for="phone">Telefone:</label>
+			<input type="text" class="form-control" name="phone" value="{{ book.phone }}">
+
+			<label for="email">Email:</label>
+			<input type="email" class="form-control" name="email" value="{{ book.email }}" >
+
+			<a href="/media/{{ book.photo }}" target="_blank">Foto atual</a>
+			<input type="file"  class="form-control-file border" name="photo" accept="image/*">
+
+			<br>
+
+			<center>
+				<button type="submit" class="btn btn-dark">Atualizar</button>
+			</center>
+		</div>
+	</form>
+
+{% endblock %}
