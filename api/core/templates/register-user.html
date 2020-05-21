@@ -31,23 +31,24 @@
 		<h1 class="text-center mt-4">Cadastrar</h1>
 
 		<div class="container border p-4" style="margin: auto; width: 25%;">
+
+		{% if messages %}
+			{% for message in messages %}
+				<div class="alert alert-danger">{{ message }}</div>
+			{% endfor %}
+
+        {% endif %}
+
 			<form method="post"> {% csrf_token %}
 				<div class="form-group">
 					<label for="username"><b> Nome de Usuário</b></label>
-					<input type="text" class="form-control" name="username_register" required>
+					<input type="text" class="form-control" name="username" required>
 
-					<label for="password"><b>Senha</b></label>
-					<input type="password" class="form-control" name="password_register" required>
-<!-- 
-					<label for="first_name"><b>Primeiro Nome:</b></label>
-					<input type="text" class="form-control" name="first_name" required>
+					<label for="password1"><b>Senha</b></label>
+					<input type="password" class="form-control" name="password1" required> 
 
-					<label for="last_name"><b>Sobrenome:</b></label>
-					<input type="text" class="form-control" name="last_name" required>
-
-					<label for="email"><b>E-mail:</b></label>
-					<input type="email" class="form-control" name="email" required> -->
-
+					<label for="password2"><b>Confirmar Senha</b></label>
+					<input type="password" class="form-control" name="password2" required>
 					<br>
 
 					<center>
@@ -55,6 +56,9 @@
 					</center>
 					
 				</div>
+				<center>
+					<a href="/login" style="color: black;"> Login </a>
+				</center>
 			</form>
 		</div>
 	</div>

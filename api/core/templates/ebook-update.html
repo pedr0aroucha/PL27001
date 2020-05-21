@@ -14,20 +14,14 @@
 
             {% endif %}
 
-			<label for="city">Cidade:</label>
-			<input type="text" class="form-control" name="city" value="{{ book.city }}" required>
-
 			<label for="description">Descrição:</label>
-			<textarea type="text" class="form-control" name="description" required>{{ book.description }}</textarea>
+			<textarea type="text" class="form-control" name="description" required>{{ ebook.description }}</textarea>
 
-			<label for="phone">Telefone:</label>
-			<input type="text" class="form-control" name="phone" value="{{ book.phone }}">
-
-			<label for="email">Email:</label>
-			<input type="email" class="form-control" name="email" value="{{ book.email }}" >
-
-			<a href="/media/{{ book.photo }}" target="_blank">Foto atual</a>
+			<a href="/media/{{ ebook.photo }}" target="_blank">Foto atual</a>
 			<input type="file"  class="form-control-file border" name="photo" accept="image/*">
+
+			<a href="/media/{{ ebook.ebook }}" target="_blank">Arquivo atual</a>
+			<input type="file"  class="form-control-file border" name="file">
 
 			<br>
 

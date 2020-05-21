@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-	{% load static %}
-
-	<title>SOS Livros</title>
 	
 	<!-- CSS only -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -25,7 +21,6 @@
         }
 
 		#menu a {
-			justify-content: center;
 			color: #FFF;
 			background-color: #252525;
 			text-decoration: none;
@@ -51,21 +46,25 @@
 		</div>
 	</div>
 
-	<div id="menu">
-		<ul class="nav ml-4">
-			<li class="nav-item">
-				<a class="nav-link" href="/book/read">Todos</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="">Meus</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/book/create">Adicionar</a>
-			</li>
-		</ul>
-	</div>
+	<ul class="nav nav-tabs">
+		<li class="nav-item">
+			<a class="nav-link active" href="/book/my">Meus</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/book/read" style="color: black;">Biblioteca</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/ebook/read" style="color: black;">Ebooks</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/logout" style="color: black;">Sair</a>
+		</li>
+	</ul>
 
 	{% block content %}
+
+	<title>SOS Books</title>
+
 	{% endblock %}
 
 	<div class="jumbotron jumbotron-fluid text-center p-4" style="
@@ -73,7 +72,7 @@
 	background-color: rgba(50, 50, 50, 1); color: white;">
 		<div class="container">
 			<h4 class="display-5">SOS Books</h4>
-			<p>Desenvolvido por <a href="https://github.com/PedroAroucha" target="_blakn"><strong>Pedro Aroucha</strong><a/></p>
+			<p>Desenvolvido por <a href="/dev" target="_blakn"><strong>Pedro Aroucha</strong><a/></p>
 		</div>
 	</div>
 </body>

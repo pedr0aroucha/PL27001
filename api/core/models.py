@@ -11,4 +11,12 @@ class Book(models.Model):
     end_date = models.DateTimeField(null=True, blank=True)
     begin_date = models.DateTimeField(auto_now_add=True)
     photo = models.ImageField(upload_to='book', blank=True, null=True)
-    
+
+
+class Ebook(models.Model):
+    description = models.TextField()
+    ebook = models.FileField(upload_to='ebook', null=True)
+    photo = models.ImageField(upload_to='ebook', blank=True, null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    end_date = models.DateTimeField(null=True, blank=True)
+    begin_date = models.DateTimeField(auto_now_add=True)

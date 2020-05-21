@@ -4,20 +4,16 @@
 
     <title>SOS Books</title>
 
-    <center>
-        <a class="btn btn-dark" href="/book/create">Adicionar</a>
-    </center>
-
     <div class="container">
+        <div>
+            <a class="btn btn-dark" href="/ebook/create">Adicionar</a>
+        </div>
         <div class="row">
-            {% for book in books %}
+            {% for ebook in ebooks %}
                 <div class="col-sm-4 p-4">
-                    <a href="/book/detail/{{ book.id }}">
+                    <a href="/ebook/detail/{{ ebook.id }}">
                         <div class="polaroid">
-                            <img src="{{ book.photo.url }}" style="width:100%">
-                            <div class="container">
-                                <p>{{ book.city }}</p>
-                            </div>
+                            <img src="{{ ebook.photo.url }}" style="width:100%">
                         </div>
                     </a>
                     <br>

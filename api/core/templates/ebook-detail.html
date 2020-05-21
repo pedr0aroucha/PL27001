@@ -15,7 +15,7 @@
 				</div>        
 				<!-- Modal body -->
 				<div class="modal-body text-right">
-					<a href="/book/delete/{{ book.id }}">
+					<a href="/ebook/delete/{{ ebook.id }}">
 						<button type="button" class="btn btn-danger">EXCLUIR</button>
 					</a>
 					<button type="button" class="btn btn-default" data-dismiss="modal">CANCELAR</button>
@@ -28,21 +28,23 @@
 		<div class="row">
 			<div class="col-sm-4">
 				<div style="border-color: black; border-style: solid; width: 300px; height: 300px;">
-					<img src="{{ book.photo.url }}" style="width: 100%; height: 100%;">
+					<img src="{{ ebook.photo.url }}" style="width: 100%; height: 100%;">
 				</div>
 			</div>
 			<div class="col-sm-8">
-				<h4>Descrição(Livro Físico)</h4>
-				<p>{{ book.description }}</p>
+				<h4>Descrição(Livro Digital)</h4>
+				<p>{{ ebook.description }}</p>
                 <h4>Contato</h4>                     
-                <p><b>Tel.: </b>{{ book.phone }}</p> 
-                <p><b>E-mail: </b>{{ book.email }}</p>
-                {% if request.user == book.user %}
-					<a href="/book/update/{{ book.id }}">
+                <p><b>Tel.: </b>{{ ebook.phone }}</p> 
+                <p><b>E-mail: </b>{{ ebook.email }}</p>
+                {% if request.user == ebook.user %}
+					<a href="/ebook/update/{{ ebook.id }}">
 						<button type="button" class="btn btn-dark">Alterar</button>
 					</a>
 					<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal_confirm">Excluir</button>
 				{% endif %}
+				<br>
+				<a href="/media/{{ ebook.ebook }}" target="_blank">Baixar</a>
 			</div>
 		</div>
 	</div>

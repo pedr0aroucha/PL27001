@@ -1,0 +1,44 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+
+	<title>SOS Books</title>
+
+	<h1 class="m-4">Livros</h1>
+
+	<div class="container">
+        <div class="row">
+            {% for book in books %}
+                <div class="col-sm-4 p-4">
+                    <a href="/book/detail/{{ book.id }}">
+                        <div class="polaroid">
+                        	<img src="{{ book.photo.url }}" style="width:100%">
+                            <div class="container">
+                                <p>{{ book.city }}</p>
+                            </div>
+                        </div>
+                    </a>
+                    <br>
+                </div>                
+            {% endfor %}
+        </div>
+    </div>
+
+    <h1 class="m-4">Ebooks</h1>
+
+	<div class="container">
+        <div class="row">
+            {% for ebook in ebooks %}
+                <div class="col-sm-4 p-4">
+                    <a href="/ebook/detail/{{ ebook.id }}">
+                        <div class="polaroid">
+                        	<img src="{{ ebook.photo.url }}" style="width:100%">
+                        </div>
+                    </a>
+                    <br>
+                </div>                
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
