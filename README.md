@@ -1,16 +1,15 @@
-# sos_books
-1 - Crie um ambiente virtual para rodar a aplicação(opcional), e no arquivo settings.py dentro do projeto(api) informe seu login e senha do mysql.
+# SOS_BOOKS
 
-2 - Crie uma tabela no seu BD mysql e informe ela junto com seus outros dados no settigns.py.
+!!! Projeto para fins didáticos !!!
 
-3 - instale o django com o comando:
+# Segue os comandos para inicializar a aplicação
 
 pip install django
 
-4 - Na pasta api rode os seguintes comandos:
+pip install pymysql
 
-python manage.py migrate
-
-python manage.py createsuperuser
+python manage migrate
 
 python manage.py runserver
+
+Na pasta DRF no arquivo settings.py informe seus dados do BD MySQL
