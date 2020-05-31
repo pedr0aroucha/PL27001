@@ -1,9 +1,13 @@
 # sos_books
-1 - Crie um ambiente virtual para rodar a aplicação(opcional), e no arquivo settings dentro do projeto(api) informe seu login e senha do mysql.
+1 - Crie um ambiente virtual para rodar a aplicação(opcional), e no arquivo settings.py dentro do projeto(api) informe seu login e senha do mysql.
 
-3 - Crie uma tabela no seu BD mysql e informe ela junto com seus outros dados no settigns.
+2 - Crie uma tabela no seu BD mysql e informe ela junto com seus outros dados no settigns.py.
 
-2 - Entre na pasta api e rode os seguintes comandos:
+3 - instale o django com o comando:
+
+pip install django
+
+4 - Na pasta api rode os seguintes comandos:
 
 python manage.py migrate
 
