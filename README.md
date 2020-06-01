@@ -2,6 +2,10 @@
 
 !!! Projeto para fins didáticos !!!
 
+# Feto com:
+
+Bootstrap 4(HTML, CSS e JAVASCRIPT), Django(Python) e MySQL
+
 # Segue os comandos para inicializar a aplicação
 
 pip install django
