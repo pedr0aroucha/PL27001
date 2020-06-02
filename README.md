@@ -2,13 +2,13 @@
 
 !!! Projeto para fins didáticos !!!
 
-# Feito com:
+### Feito com:
 
 Bootstrap 4(HTML, CSS e JAVASCRIPT), Django(Python) e MySQL
 
-# Segue os comandos para inicializar a aplicação
+### Segue os comandos para inicializar a aplicação
 
-Na pasta DRF no arquivo settings.py informe seus dados do BD MySQL
+Na pasta api no arquivo settings.py informe seus dados do BD MySQL
 
 pip insall -r requirements.txt
 
