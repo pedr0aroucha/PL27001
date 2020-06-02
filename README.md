@@ -2,7 +2,7 @@
 
 !!! Projeto para fins didáticos !!!
 
-# Feto com:
+# Feito com:
 
 Bootstrap 4(HTML, CSS e JAVASCRIPT), Django(Python) e MySQL
 
