@@ -12,10 +12,6 @@ Na pasta DRF no arquivo settings.py informe seus dados do BD MySQL
 
 pip insall -r requirements.txt
 
-python manage makemigrations core
-
-python manage migrate core
-
 python manage migrate
 
 python manage.py runserver
