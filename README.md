@@ -4,11 +4,9 @@
 
 ### Feito com:
 
-Bootstrap 4(HTML, CSS e JAVASCRIPT), Django(Python) e MySQL
+Bootstrap 4(HTML, CSS e JAVASCRIPT), Django(Python) e SqLite
 
 ### Segue os comandos para inicializar a aplicação
-
-Na pasta api no arquivo settings.py informe seus dados do BD MySQL
 
 pip insall -r requirements.txt
 
