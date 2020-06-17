@@ -4,7 +4,7 @@
 
 ### Feito com:
 
-Bootstrap 4(HTML, CSS e JAVASCRIPT), Django(Python) e SqLite
+Bootstrap 4(HTML, CSS e JAVASCRIPT), Django(Python) e sqlite3
 
 ### Segue os comandos para inicializar a aplicação
 
