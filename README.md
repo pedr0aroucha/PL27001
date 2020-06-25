@@ -1,15 +1,28 @@
-# SOS_BOOKS
+<h1>SOS Book</h1>
 
-!!! Projeto para fins didáticos !!!
+<h3>Feito com :wrench: </h3>
+<ul>
+  <li>Python</li>
+  <ul>
+    <li>Django</li>
+    <li>Sqlite3</li>
+  </ul>
+  <li>HTML/CSS</li>
+  <li>Bootsrap</li>
+</ul>
 
-### Feito com:
+<h3>Começando :rocket: </h3>
 
-Bootstrap 4(HTML, CSS e JAVASCRIPT), Django(Python) e sqlite3
-
-### Segue os comandos para inicializar a aplicação
-
-pip insall -r requirements.txt
-
-python manage migrate
-
-python manage.py runserver
+<ul>
+  <i>Instalando as dependências</i>
+  <li> <strong> pip install -r requirements.txt </strong></li>
+  <i>Entre na pasta sos_book</i>
+  <br>
+  <i>Criando e sincronizando com o BD</i>
+  <li><strong> python manage.py migrate </strong></li>
+  <ul>
+    <li> <strong> python manage.py makemigrations core </strong></li>
+    <li><strong> python manage.py migrate core </strong></li>
+  </ul>
+  <i>Iniciando o servidor</i>
+  <li><strong> python manage.py runserver </strong></li>
