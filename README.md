@@ -5,7 +5,6 @@
   <li>Python</li>
   <ul>
     <li>Django</li>
-    <li>Sqlite3</li>
   </ul>
   <li>HTML/CSS</li>
   <li>Bootsrap</li>
