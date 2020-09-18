@@ -1,0 +1,7 @@
+sos_book/db.sqlite3
+
+.env
+
+sos_book/api/__pycache__
+sos_book/core/__pycache__
+sos_book/core/migrations/__pycache__

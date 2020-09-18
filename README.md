@@ -1,27 +1,45 @@
-<h1>SOS Book</h1>
+# readme
 
-<h3>Feito com :wrench: </h3>
+### 🛠 TECHNOLOGIES USED
 <ul>
-  <li>Python</li>
-  <ul>
-    <li>Django</li>
-  </ul>
+  <li>Python - Django </li>
   <li>HTML/CSS</li>
-  <li>Bootsrap</li>
 </ul>
 
-<h3>Começando :rocket: </h3>
-
+### 🧰 DEPENDENCIES
 <ul>
-  <i>Instalando as dependências</i>
-  <li> <strong> pip install -r requirements.txt </strong></li>
-  <i>Entre na pasta sos_book</i>
-  <br>
-  <i>Criando e sincronizando com o BD</i>
-  <li><strong> python manage.py migrate </strong></li>
-  <ul>
-    <li> <strong> python manage.py makemigrations core </strong></li>
-    <li><strong> python manage.py migrate core </strong></li>
-  </ul>
-  <i>Iniciando a App</i>
-  <li><strong> python manage.py runserver </strong></li>
+  <li> <a href="https://www.python.org/downloads/"> Python </a> </li>
+</ul>
+
+### 🚀 GET STARTING
+
+1. Make a clone :
+
+```sh
+  $ git clone https://github.com/pedr0aroucha/sos_book.git
+```
+
+2. Execute the aplication:
+
+```sh
+  # enter the folder
+  $ cd sos_book
+
+  # starting the virtual development environment
+  $ python3 -m venv .env
+  $ source .env/bin/activate
+
+  # Install the dependencies
+  $ pip install -r requirements.txt
+
+  # enter the folder
+  $ cd sos_book
+  
+  # creating and synchronizing the database
+  $ python manage.py migrate
+  $ python manage.py makemigrations && python manage.py migrate
+
+  # Start the aplication
+  $ python manage.py runserver
+
+```

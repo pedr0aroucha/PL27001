@@ -45,7 +45,7 @@ def update_book(request, id):
         if photo:
             book.photo = photo
         book.save()
-        return redirect('/')
+        return redirect('/book/read')
     return render(request, 'book-update.html', {'book': book})
 
 
@@ -95,9 +95,9 @@ def update_ebook(request, id):
         photo = request.FILES.get('photo')
         if photo:
             book.photo = photo
-        file.ebook = request.FILES.get('file')
-        book.save()
-        return redirect('/')
+        file = request.FILES.get('file')
+        ebook.save()
+        return redirect('/ebook/read')
     return render(request, 'ebook-update.html', {'ebook': ebook})
 
 

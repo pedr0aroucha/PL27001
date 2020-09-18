@@ -13,8 +13,11 @@
             {% for book in books %}
                 <div class="col-sm-4 p-4">
                     <a href="/book/detail/{{ book.id }}">
-                        <div class="polaroid">
-                            <img src="{{ book.photo.url }}" style="width:100%">
+                        <div style="border-radius: 2em" class="polaroid">
+                            <img src="{{ book.photo.url }}" 
+                                style="width:100%; 
+                                        border-top-left-radius: 2em;
+                                        border-top-right-radius: 2em;">
                             <div class="container">
                                 <p>{{ book.city }}</p>
                             </div>
