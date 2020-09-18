@@ -37,7 +37,6 @@
   
   # creating and synchronizing the database
   $ python manage.py migrate
-  $ python manage.py makemigrations && python manage.py migrate
 
   # Start the aplication
   $ python manage.py runserver
